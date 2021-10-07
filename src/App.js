@@ -1,15 +1,15 @@
-import HeroSection from "./Workcomponent/HeroSection";
-import GallarySection from "./Workcomponent/GallarySection";
+import Productnav from "./Productcomponent/product_nav";
+import Product from "./Productcomponent/product";
+import "./productcss/product-nav.css";
+import "./productcss/product.css";
+import "./productcss/productresponsive.css";
 import Footer from "./Workcomponent/Footer";
-import "./workcss/style.css";
-import "./workcss/responsive.css";
-import "./workcss/navbar.css";
 
 function App() {
   return (
     <div className="App">
-      <HeroSection />
-      <GallarySection />
+      <Productnav />
+      <Product />
       <Footer />
     </div>
   );
