@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-import { TimelineLite, Power2 } from "gsap";
+import { gsap, Power2 } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
 // import logo from "../img/logo-codigo.png";
 function Navbar() {
   const [toggle, setToggle] = useState(true);
@@ -13,8 +14,8 @@ function Navbar() {
   let textreveal5 = useRef(null);
   let textreveal6 = useRef(null);
   let textreveal7 = useRef(null);
-  const t1 = new TimelineLite();
-  const t2 = new TimelineLite();
+  const t1 = new gsap.timeline();
+  const t2 = new gsap.timeline();
 
   useEffect(() => {
     t1.from(

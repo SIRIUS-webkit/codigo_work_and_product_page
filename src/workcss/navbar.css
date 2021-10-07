@@ -138,10 +138,10 @@ nav .logo img {
   }
   .nav-links {
     position: fixed;
-    top: 0;
+    top: -2%;
     left: 0;
     background-color: #3a2837;
-    height: 100%;
+    height: 105%;
     width: 100%;
     flex-direction: column;
     display: flex;

@@ -96,7 +96,7 @@ function Footer() {
               </h3>
               <p className="move-left">Co-incubate an idea together</p>
             </div>
-            <d1iv className="col-lg-3 right-line expand-right animate-foot">
+            <div className="col-lg-3 right-line expand-right animate-foot">
               <h3 ref={redarrow3} onMouseOver={domove3} onMouseLeave={goleave3}>
                 Customise{" "}
                 <img
@@ -106,7 +106,7 @@ function Footer() {
                 />
               </h3>
               <p>Customise a solution for your business</p>
-            </d1iv>
+            </div>
             <div className="col-lg-3 expand-left left-arrow-line animate-foot">
               <h3 ref={redarrow4} onMouseOver={domove4} onMouseLeave={goleave4}>
                 Organise{" "}

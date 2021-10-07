@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./Carousel.css";
 
 const Carousel = ({ children }) => {
   const [counter, setCounter] = useState(1);
@@ -11,14 +10,6 @@ const Carousel = ({ children }) => {
       setCounter(counter + 1);
     } else {
       setCounter(1);
-    }
-  };
-
-  const handlePre = () => {
-    if (counter !== 1) {
-      setCounter(counter - 1);
-    } else {
-      setCounter(content.length);
     }
   };
 

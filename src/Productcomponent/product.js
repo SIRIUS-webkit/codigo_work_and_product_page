@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { TimelineLite, Power2 } from "gsap";
+import React, { useState, useEffect, useRef } from "react";
+import { gsap, Power2 } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
 import Carousel from "./Carousel";
-import { useRef } from "react/cjs/react.development";
+
 function Product() {
   let producttitle = useRef(null);
   let hidetitle = useRef(null);
@@ -10,7 +11,7 @@ function Product() {
   let bigcircle = useRef(null);
   let leftbtn = useRef(null);
   let rightbtn = useRef(null);
-  const t1 = new TimelineLite();
+  const t1 = new gsap.timeline();
 
   useEffect(() => {
     t1.from(
@@ -67,14 +68,12 @@ function Product() {
             <img
               src="https://www.codigo.co/img/ui/arrow-left-white.svg"
               alt=""
-              srcset=""
             />
           </div>
           <div className="route-btn right" ref={rightbtn}>
             <img
               src="https://www.codigo.co/img/ui/arrow-left-white.svg"
               alt=""
-              srcset=""
             />
           </div>
           <div className="row">
@@ -110,7 +109,6 @@ function Product() {
                     <img
                       src="https://cdn.codigo.co/uploads/2021/04/KIWI-4@2x.png"
                       alt=""
-                      srcset=""
                     />
                   </div>
 
@@ -118,21 +116,18 @@ function Product() {
                     <img
                       src="https://cdn.codigo.co/uploads/2021/04/KIWI-3@2x.png"
                       alt=""
-                      srcset=""
                     />
                   </div>
                   <div>
                     <img
                       src="https://cdn.codigo.co/uploads/2021/04/KIWI-1@2x.png"
                       alt=""
-                      srcset=""
                     />
                   </div>
                   <div>
                     <img
                       src="https://cdn.codigo.co/uploads/2021/04/KIWI-2@2x.png"
                       alt=""
-                      srcset=""
                     />
                   </div>
                 </Carousel>

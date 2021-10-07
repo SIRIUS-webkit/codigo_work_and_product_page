@@ -116,17 +116,30 @@
     margin-top: -30px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 411px) {
   .image {
     margin-left: -50px;
   }
   .image img {
     width: 500px;
-    height: 85%;
+    height: 60%;
   }
   .page {
     width: 350px;
-    margin-top: -100px;
+    margin-top: -350px;
+  }
+}
+@media (max-width: 360px) {
+  .image {
+    margin-left: -50px;
+  }
+  .image img {
+    width: 450px;
+    height: 70%;
+  }
+  .page {
+    width: 300px;
+    margin-top: -210px;
   }
 }
 @media (max-width: 345px) {

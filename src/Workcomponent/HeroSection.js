@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from "react";
-import { TimelineLite, Power2 } from "gsap";
+import { gsap, Power2 } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+
 import Navbar from "./Navbar";
 function HeroSection() {
   let cont1 = useRef(null);
   let cont2 = useRef(null);
-  const t1 = new TimelineLite();
+  const t1 = new gsap.timeline();
 
   useEffect(() => {
     t1.from(
