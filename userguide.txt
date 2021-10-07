@@ -6,3 +6,14 @@ import Footer from "./Workcomponent/Footer";
 import "./workcss/navbar.css";
 import "./workcss/style.css";
 
+function App() {
+  return (
+    <div className="App">
+      <HeroSection />
+      <GallerySection />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
