@@ -1,3 +1,9 @@
 For work page, you must change in App.js
 
-
+import Herosection from "./Workcomponent/Herosection";
+import Gallerysection from "./Workcomponent/Gallerysection";
+import Footer from "./Workcomponent/Footer";
+import "./workcss/na";
+import "./productcss/product.css";
+import "./Productcomponent/Carousel.css";
+import "./productcss/productresponsive.css";
